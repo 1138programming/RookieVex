@@ -19,6 +19,7 @@ void DriveWithJoy::initialize() {
 }
 
 void DriveWithJoy::execute() {
+  printf("%d, %d\n", leftSideSpeed, rightSideSpeed);
   Robot::base->moveAtSpeed(leftSideSpeed, rightSideSpeed);
 }
 

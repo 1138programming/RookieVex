@@ -5,5 +5,12 @@
 #include "libIterativeRobot/commands/Base/DriveForTime.h"
 
 AutonGroup1::AutonGroup1() {
-  addSequentialCommand(new BaseLinearMovement(10000, 10000, 1, 0.02));
+  addSequentialCommand(new DriveForTime(100, 100, 1000));
+  addSequentialCommand(new DriveForTime(80, -80, 2000));
+  addSequentialCommand(new DriveForTime(100, 100, 1000));
+  addSequentialCommand(new DriveForTime(80, -80, 2000));
+  addSequentialCommand(new DriveForTime(100, 100, 1000));
+  addSequentialCommand(new DriveForTime(80, -80, 2000));
+  addSequentialCommand(new DriveForTime(100, 100, 1000));
 }
+

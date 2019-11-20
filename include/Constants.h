@@ -14,10 +14,10 @@
 #define MAX_FOLLOWERS 3
 
 // Motor ports
-const int frontLeftBasePort = 3;
-const int frontRightBasePort = 2;
-const int backLeftBasePort = 4;
-const int backRightBasePort = 5;
+const int frontLeftBasePort = 20;
+const int frontRightBasePort = 11;
+const int backLeftBasePort = 10;
+const int backRightBasePort = 1;
 
 // Motor gearsets
 const pros::motor_gearset_e_t baseMotorGearset = pros::E_MOTOR_GEARSET_18;
